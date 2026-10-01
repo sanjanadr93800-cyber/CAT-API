@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Interactive Pratice</title>
+        <style>
+            .banner {
+                background-color:cyan;
+                width: 400px;
+            }
+            .active {
+                background-color: magenta;
+                color:white;
+                transform:scale(1.1);
+            }
+
+        </style>
+    </head>
+    <body>
+       <div id ="banner1">
+         <h1>Sanjana</h1>
+         <p>Student</p>
+         <button id = "banner1button">Click me</button>
+       </div>
+       <div id ="banner2">
+         <h1>Sara</h1>
+         <p>Lawyer</p>
+         <button id = "banner2button">Click me</button>
+       </div>
+       <div id ="banner3">
+         <h1>Zara</h1>
+         <p>Teacher</p>
+         <button id = "banner3button">Click me</button>
+       </div>
+       <script>
+           const dynamic_banner1 = document.querySelector('#banner1');
+           const dynamic_banner2 = document.querySelector('#banner2');
+           const dynamic_banner3 = document.querySelector('#banner3');
+           dynamic_banner1.classList.add('banner');
+           dynamic_banner2.classList.add('banner');
+           dynamic_banner3.classList.add('banner');
+           const button1=document.querySelector('#banner1button');
+           const button2=document.querySelector('#banner2button');
+           const button3=document.querySelector('#banner3button');
+           dynamic_banner1.addEventListener('mouseover', function() {
+                dynamic_banner1.classList.add('active');
+
+           });
+            dynamic_banner1.addEventListener('mouseout', function() {
+                dynamic_banner1.classList.remove('active');
+            });
+            dynamic_banner2.addEventListener('mouseover', function() {
+                dynamic_banner2.classList.add('active');
+
+           });
+            dynamic_banner2.addEventListener('mouseout', function() {
+                dynamic_banner2.classList.remove('active');
+            });
+
+            dynamic_banner3.addEventListener('mouseover', function() {
+               dynamic_banner3.classList.add('active');
+
+           });
+            dynamic_banner3.addEventListener('mouseout', function() {
+                dynamic_banner3.classList.remove('active');
+            });
+
+
+
+
+       </script>
+    </body>
+</html>
